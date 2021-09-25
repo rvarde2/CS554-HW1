@@ -17,7 +17,7 @@ class philosopherThread  extends Thread{
         this.index = index;
         this.threadName="Thread_"+index;
     }
-    public synchronized void run(){
+    public void run(){
         //Loop to wait for Chopsticks
         while(true){
             if(getChopsticks()){
